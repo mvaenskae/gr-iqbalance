@@ -68,10 +68,10 @@ endif()
 ########################################################################
 # Find FFTW3
 ########################################################################
-#find_package(Gnuradio COMPONENTS FFTW3f)
+find_package(Gnuradio COMPONENTS FFTW3f)
 #find_package(FFTW3f PATHS ${GR_PREFIX}/lib/cmake/gnuradio/)
-find_package(FFTW3f PATHS /home/vagrant/gr-iqbal/cmake/Modules)
-message(STATUS "Found FFTW3f Block: ${FFTW3f_FOUND}")
+#find_package(FFTW3f PATHS /home/vagrant/gr-iqbal/cmake/Modules)
+#message(STATUS "Found FFTW3f Block: ${FFTW3f_FOUND}")
 
 if(NOT FFTW3f_FOUND)
     message(FATAL_ERROR "FFTW3 required to compile iqbalance")
